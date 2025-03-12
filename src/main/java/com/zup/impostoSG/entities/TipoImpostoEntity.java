@@ -1,4 +1,4 @@
-package com.zup.impostoSG.entity;
+package com.zup.impostoSG.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
-@Table(name = "tipo_impostos")
+@Table(name = "tipos_impostos")
 @Entity
 public class TipoImpostoEntity {
 
@@ -15,12 +15,12 @@ public class TipoImpostoEntity {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String nome;
+    private String name;
 
-    @Column(nullable = false, unique = true)
-    private String descricao;
+    @Column(nullable = false)
+    private String description;
 
-    @Column(nullable = false, unique = true)
-    private Double aliquota;
+    @Column(nullable = false)
+    private Double rate;
 
 }
