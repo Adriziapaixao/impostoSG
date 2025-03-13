@@ -1,4 +1,4 @@
-package com.zup.impostoSG.controllers.dtos;
+package com.zup.impostoSG.controllers.dtos.response;
 
 
 import lombok.AllArgsConstructor;
@@ -10,10 +10,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CalculoImpostoDto {
+public class CalculoImpostoResponse {
 
     private String tipoImposto;
     private Double valorBase;
-    private Double valorCalculado;
+    private Double aliquota;
+    private Double valorImposto;
 
 }

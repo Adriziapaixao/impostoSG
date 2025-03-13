@@ -1,4 +1,4 @@
-package com.zup.impostoSG.controllers.dtos;
+package com.zup.impostoSG.controllers.dtos.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class JwtResponseDto {
+public class JwtRequest {
 
-    private String token;
+    private String username;
+    private String password;
 }

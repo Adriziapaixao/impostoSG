@@ -1,6 +1,5 @@
-package com.zup.impostoSG.controllers.dtos;
+package com.zup.impostoSG.controllers.dtos.response;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,11 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ImpostoDto {
-
+public class TipoImpostoResponse {
     private Long id;
-    private String name;
-    private String description;
-    private Double rate;
-
+    private String nome;
+    private String descricao;
+    private Double aliquota;
 }
